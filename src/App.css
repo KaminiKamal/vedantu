@@ -1,0 +1,570 @@
+
+@media only screen and (min-width: 601px) {
+  .App {
+    position: relative;
+  }
+  button, html [type=button] {
+    -webkit-appearance: button;
+  }
+  .data-container{
+    padding: 2em 10em 1em 10em;
+    display: flex;
+  }
+  .user-bio{
+    padding-right: 30px;
+    float: left;
+    width: 25%;
+    margin-top: -20px;
+  }
+  .user-details{
+    padding-right: 10px;
+    float: left;
+    width: 80%;
+  } 
+  .details-toolbar{
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #d1d5da;
+  }
+  .details-searchbar{
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display: flex;
+    border-bottom: 1px solid #d1d5da;
+  }
+  .btn-row{
+    display: flex;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 48%;
+  }
+  .btn-row select{
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    color: #24292e;
+    background-position: -1px -1px;
+    background-repeat: repeat-x;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 12px;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    
+  }
+  .option-dropdown{
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(27,31,35,.15);
+    border-radius: 3px;
+    box-shadow: 0 3px 12px rgba(27,31,35,.15);
+    color: #586069;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+  }
+  .btn-row button{
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+    color: #fff;
+    width: 85px;
+    border-radius: 4px;
+    border: none;
+  }
+  .search-bar{
+    background-color: #fff;
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+    color: #24292e;
+    line-height: 20px;
+    min-height: 22px;
+    outline: none;
+    padding: 6px 8px;
+    font-size: 14px;
+    vertical-align: middle;
+    width: 48%;
+    margin-right: 25px;
+  }
+  
+  .badge{
+    background-color: rgba(27,31,35,.08);
+    border-radius: 20px;
+    color: #586069;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2px 5px;
+  }
+  .individual-repo{
+    /* border-bottom-color: #e36209;
+    color: #24292e;
+    font-weight: 600; */
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: #586069;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 16px;
+    padding: 16px 8px;
+    text-align: center;
+  }
+  .individual-repo.selected{
+    border-bottom-color: #e36209;
+    color: #24292e;
+    font-weight: 600;
+  }
+  .individual-repo:hover{
+    border-bottom-color: #d1d5da;
+    color: #24292e;
+    text-decoration: none;
+    transition: .2s ease;
+  }
+  .repo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .user-repo{
+    display: block;
+    width: 100%;
+    margin:0em 1em 1em 0.5em;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d1d5da;
+  }
+  .user-repo h3{
+    color: #0366d6;
+  }
+  .line-language{
+    background-color: #f1e05a;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    top: 1px;
+    width: 12px;
+    margin-right: 5px;
+  }
+  .doc-language{
+    margin-right: 16px;
+    font-size: 12px;
+  }
+  
+  .user-bio > div{
+    display: block;
+    margin: 1em 0em 1em 0em;
+  }
+  .user-bio > div > img {
+    width: 98%;
+    height: 15em;
+    border-radius: 4px;
+  }
+  .company-name{
+    color: #666;
+    padding: 0.1em 0em 0.5em 0em;
+    font-size: 14px;
+  }
+  .bio-button{
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    color: #24292e;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0em 0em 1em 0em;
+    background-image: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgba(27,31,35,.35);
+    border-radius: 4px;
+    font-weight: 600;
+    /* border-color: rgba(27,31,35,.35); */
+    /* box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,.15); */
+  }
+  .bio-button:hover{
+    background-color:#EAEEF3
+  }
+  .name{
+    color: #151515;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0.5em 0em 0.2em 0em;
+  }
+  .login-name{
+    color: #666;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0em 0em 0.5em 0em;
+  }
+  .bio{
+    margin: 0.5em 0em 0.5em 0em;
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .header {
+    background-color: #24292e;
+    color: hsla(0,0%,100%,.75);
+    padding-bottom: 12px;
+    padding-top: 12px;
+    z-index: 32;
+  }
+  
+  .header > header-content{
+    /* display: flex !important; */
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    justify-content: space-between !important;
+  }
+  .header>header-content>header-items{
+    width: 66%;
+    display: flex !important;
+    flex: 1 1 auto !important;
+    justify-content: space-between !important;
+  }
+  .item-element{
+    /* display: flex !important; */
+    padding:'1em';
+    margin-left: 17.5% !important;
+    
+  
+  }
+  .header-element{
+    padding: 0em 1em 0em 1em;
+    font-weight: 600;
+    font-size: small;
+    color: #ffffff;
+  }
+  .search-box{
+    background-color: hsla(0,0%,100%,.125);
+    border: 0;
+    box-shadow: none;
+    color: #fff;
+    font-size: inherit;
+    min-height: 30px;
+    padding: 2px 5px 2px 15px;
+    width: 300px;
+    border-radius: 4px;
+  }
+  
+  
+  .App-link {
+    color: #61dafb;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    width: min-content;
+  }
+  .App {
+    position: relative;
+    width: 100%;
+  }
+  
+  .data-container{
+    /* padding: 2em 10em 1em 10em; */
+    /* display: flex; */
+  }
+  .user-bio{
+    float: left;
+    width: auto;
+    margin-top: -20px;
+    /* margin-right: 15px; */
+    text-align: center;
+  }
+  .user-details{
+    float: left;
+    width: 100%;
+  } 
+  .details-toolbar{
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #d1d5da;
+  }
+  .details-searchbar{
+    /* padding-bottom: 16px;
+    padding-top: 16px;
+    display: flex;
+    border-bottom: 1px solid #d1d5da; */
+    padding-bottom: 16px;
+    padding-top: 16px;
+    /* display: flex; */
+    overflow-x: scroll;
+    text-align: center;
+    margin: 10px 10px 10px -5px;
+    border-bottom: 1px solid #d1d5da;
+  }
+  .btn-row{
+    /* display: flex;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 48%; */
+    display: flex;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+    padding: 15px;
+  }
+  .btn-row select{
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    color: #24292e;
+    background-position: -1px -1px;
+    background-repeat: repeat-x;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 12px;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width:33%
+  }
+  .option-dropdown{
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(27,31,35,.15);
+    border-radius: 3px;
+    box-shadow: 0 3px 12px rgba(27,31,35,.15);
+    color: #586069;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+  }
+  .btn-row button{
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+    color: #fff;
+    width: 85px;
+    border-radius: 4px;
+    border: none;
+    width: 25%;
+  }
+  .search-bar{
+    background-color: #fff;
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+    color: #24292e;
+    line-height: 20px;
+    min-height: 22px;
+    outline: none;
+    padding: 6px 8px;
+    font-size: 14px;
+    vertical-align: middle;
+    width: 90%;
+  }
+  
+  .badge{
+    background-color: rgba(27,31,35,.08);
+    border-radius: 20px;
+    color: #586069;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2px 5px;
+  }
+  .individual-repo{
+    /* border-bottom-color: #e36209;
+    color: #24292e;
+    font-weight: 600; */
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: #586069;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 16px;
+    padding: 16px 8px;
+    text-align: center;
+  }
+  .individual-repo.selected{
+    border-bottom-color: #e36209;
+    color: #24292e;
+    font-weight: 600;
+  }
+  .individual-repo:hover{
+    border-bottom-color: #d1d5da;
+    color: #24292e;
+    text-decoration: none;
+    transition: .2s ease;
+  }
+  .repo-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .user-repo{
+    display: block;
+    width: 100%;
+    margin:0em 1em 1em 0.5em;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d1d5da;
+  }
+  .user-repo h3{
+    color: #0366d6;
+  }
+  .line-language{
+    background-color: #f1e05a;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    top: 1px;
+    width: 12px;
+    margin-right: 5px;
+  }
+  .doc-language{
+    margin-right: 16px;
+    font-size: 12px;
+  }
+  
+  .user-bio > div{
+    display: block;
+    margin: 1em 0em 1em 0em;
+  }
+  .user-bio > div > img {
+    width: 100%;
+    height: 20em;
+    border-radius: 4px;
+  }
+  .company-name{
+    color: #666;
+    padding: 0.1em 0em 0.5em 0em;
+    font-size: 14px;
+  }
+  .bio-button{
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    color: #24292e;
+    width: 90%;
+    padding: 1em;
+    text-align: center;
+    margin: 0em 0em 1em 0em;
+    background-image: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgba(27,31,35,.35);
+    border-radius: 4px;
+    font-weight: 600;
+    /* color: #24292e;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0em 0em 1em 0em;
+    background-image: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgba(27,31,35,.35);
+    border-radius: 4px;
+    font-weight: 600; */
+    /* border-color: rgba(27,31,35,.35); */
+    /* box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,.15); */
+  }
+  .bio-button:hover{
+    background-color:#EAEEF3
+  }
+  .name{
+    color: #151515;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0.5em 0em 0.2em 0em;
+  }
+  .login-name{
+    color: #666;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0em 0em 0.5em 0em;
+  }
+  .bio{
+    margin: 0.5em 0em 0.5em 0em;
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .header {
+    background-color: #24292e;
+    color: hsla(0,0%,100%,.75);
+    padding-bottom: 12px;
+    padding-top: 12px;
+    z-index: 32;
+  }
+  
+  .header > header-content{
+    /* display: flex !important; */
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: center;
+  }
+  .header>header-content>header-items{
+    width: 66%;
+    display: flex !important;
+    flex: 1 1 auto !important;
+    text-align: center;
+  }
+  .item-element{
+    display: inline;
+    text-align: center;
+  }
+  .header-element{
+    padding: 0em 1em 0em 1em;
+    font-weight: 600;
+    font-size: small;
+    color: #ffffff;
+  }
+  .search-box{
+    background-color: hsla(0,0%,100%,.125);
+    border: 0;
+    box-shadow: none;
+    color: #fff;
+    font-size: inherit;
+    min-height: 30px;
+    padding: 2px 5px 2px 15px;
+    width: 80%;
+    margin: 5px 20px 10px 25px;
+    border-radius: 4px;
+  }
+  
+  
+  .App-link {
+    color: #61dafb;
+  }
+}
+
