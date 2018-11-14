@@ -2,7 +2,107 @@
 @media only screen and (min-width: 601px) {
   .App {
     position: relative;
+    background-color: #FC884A;
+    height: 100vh;
   }
+  .container{
+    
+    padding: 10em 9em 10em 20em;
+    position: relative;
+  }
+  .card-container{
+    background-color: #ffffff;
+    border: 1px solid orange;
+    width: 85%;
+    height: 10em;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+  }
+  .box-content{
+    
+    border-left: 2px solid #F0F0F0;
+  }
+  .box-ribbon{
+    display: flex;
+    height: 33%;
+    padding: 2px;
+    font-weight: 500;
+  }
+  .box-ribbon-center{
+    display: flex;
+    height: 33%;
+    padding: 2px;
+    font-weight:500;
+    background-color: #F8F8F8;
+  }
+  .date-tag {
+    width: 7%;
+    height: 100%;
+    /* font-size: x-large; */
+    padding: 40px 25px 10px 0px;
+    color: #FE6135;
+    text-align: end;
+  }
+  .date-month{
+    font-size: large;
+    font-weight: 500;
+  }
+  .date-date{
+    text-align: -webkit-right;
+    /* padding-right: inherit; */
+    font-size: xx-large;
+    font-weight: 700;
+  }
+  .time-tag{
+    width: 12%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .details-tag{
+    width: 100%;
+    height: 100%;
+    color: #FE7049;
+    font-size: 17px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: 500;
+  }
+  .details-tag span{
+    font-weight: 500;
+  }
+  .inv-name{
+    font-size: 11px;
+    color: lightslategray;
+    display: inline-block;
+  }
+  .display-btn{
+    width: 10em;
+    height: 2em;
+    margin-top: 0.5em;
+    padding-right: 5px;
+    padding-top: 5px;
+  }
+  .reminder-btn{
+    width: 8em;
+    height: 2em;
+    border-radius: 16px;
+    border: none;
+    background-color: #FC5D5F;
+    color: white;
+    font-size: 11px;
+    float:right;
+  }
+
+
+
+
+
+
   button, html [type=button] {
     -webkit-appearance: button;
   }

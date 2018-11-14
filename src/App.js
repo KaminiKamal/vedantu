@@ -25,7 +25,83 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
+       <div className="App">
+        <div className="container">
+          <div className="card-container">
+            <div className="date-tag">
+              <div className="date-month">
+                AUG
+              </div>
+              <div className="date-date">
+                27
+              </div>
+            </div>
+            <div class="box-content">
+              <div class="box-ribbon">
+                <div className="time-tag">
+                  <div>6-7 PM</div>
+                </div>
+                <div className="details-tag">
+                    <span>Black Hole Geographies: A study in special reality and ther...</span>
+                    <span className="inv-name">  By <u>Alfred Nobel</u></span>
+                </div>
+                <div className="display-btn">
+                  <button type="button" className="reminder-btn">Set Reminder</button>
+                </div>
+              </div>
+              <div class="box-ribbon-center">
+                <div className="time-tag">
+                  <div>7-8 PM</div>
+                </div>
+                <div className="details-tag">
+                    <span>Black Hole Geographies: A study in special reality and there ...</span>
+                    <span className="inv-name">  By <u>Alfred Nobel</u></span>
+                </div>
+                <div className="display-btn">
+                  <button type="button" className="reminder-btn">Set Reminder</button>
+                </div>
+              </div>
+              <div class="box-ribbon">
+                <div className="time-tag">
+                  <div>8-9 PM</div>
+                </div>
+                <div className="details-tag">
+                    <span>Black Hole Geographies: A study in special reality and ther...</span>
+                    <span className="inv-name">  By <u>Alfred Nobel</u></span>
+                </div>
+                <div className="display-btn">
+                  <button type="button" className="reminder-btn">Set Reminder</button>
+                </div>
+              </div>
+              {/* <div class="box-ribbon">
+                <div className="time-tag">
+                  <div>7-8 PM</div>
+                </div>
+                <div className="details-tag">
+                    <span>Black Hole Geographies: A study in special reality and ther...</span>
+                </div>
+                <div className="display-btn">
+                  <button type="button" className="reminder-btn">set reminder</button>
+                </div>
+                <div class="box-ribbon">
+                <div className="time-tag">
+                  <div>8-9 PM</div>
+                </div>
+                <div className="details-tag">
+                    <span>Black Hole Geographies: A study in special reality and ther...</span>
+                </div>
+                <div className="display-btn">
+                  <button type="button" className="reminder-btn">set reminder</button>
+                </div>
+              </div>
+              </div>
+                 */}
+          
+            </div>
+          </div>
+        </div>
+        
+        {/* <Header/>
         <div className="data-container">
           
           <UserBio followerCount={this.followerCount.bind(this)} />
@@ -35,7 +111,8 @@ class App extends Component {
             starred={this.state.starred}
           />
 
-        </div>
+        </div> */}
+      </div>
       </div>
     );
   }
